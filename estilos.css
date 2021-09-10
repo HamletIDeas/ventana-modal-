@@ -1,0 +1,86 @@
+*{
+	border: 0;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.escena{
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.5);
+}
+.wm-block{
+	width: 30%;
+	position: fixed;
+	left: 35%;
+	top: 50px;
+	border-radius: 5px;
+	opacity: 1;
+	animation-name: algo;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+}
+@keyframes algo{
+	0%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+	}
+}
+.wm-head{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 20px;
+	color: #fff;
+	background-color: #00AC65;
+	border-radius: 5px 5px 0 0;
+}
+.wm-head a{
+	text-decoration: none;
+	background-color: #fff;
+	padding: 5px;
+	border-radius: 500px;
+	color: #04545C;
+}
+.wm-body{
+	background-color: #fff;
+	padding: 20px;
+}
+.wm-controls{
+	background-color: #fff;
+	display: flex;
+	justify-content: flex-end;
+	padding: 20px;
+}
+.wm-controls .btn{ margin-right: 15px;}
+/*---------- Botones ----------*/
+.btn {
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    text-align: center; 
+	padding: 11px 20px;
+    font-size: 15px;
+    border-radius: 7px;
+    color: #000;
+    background-color: #c6c6c6;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #068894;
+}
+.btn-primary:hover {
+    color: #fff;
+    background-color: #04545C;
+}
+.btn-danger {
+    color: #fff;
+    background-color: #B62F2E;
+}
+.btn-danger:hover{
+    color: #fff;
+    background-color: #872322;
+}
